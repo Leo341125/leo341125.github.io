@@ -1,10 +1,1 @@
-/* global Fluid, CONFIG */
-
-(function(window, document) {
-  for (const each of document.querySelectorAll('img[lazyload]')) {
-    Fluid.utils.waitElementVisible(each, function() {
-      each.removeAttribute('srcset');
-      each.removeAttribute('lazyload');
-    }, CONFIG.lazyload.offset_factor);
-  }
-})(window, document);
+window;for(const a of document.querySelectorAll("img[lazyload]"))Fluid.utils.waitElementVisible(a,function(){a.removeAttribute("srcset"),a.removeAttribute("lazyload")},CONFIG.lazyload.offset_factor);
